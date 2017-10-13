@@ -98,4 +98,4 @@ def clean(ctx):
 
 @task
 def sync(ctx):
-    ctx.run('aws s3 sync image s3://assets.propublica.org/illinois/2017-10-13-federal-gun-cases --acl public-read --cache-control maxage=30')
+    ctx.run('aws s3 sync image s3://assets.propublica.org/illinois/2017-10-13-federal-gun-cases --acl public-read --cache-control max-age=30')
